@@ -16,20 +16,23 @@
 
 <body>
     <div id="wrapper">
-        <h2 class="title">Thực Đơn kèo Tối thứ 7</h2>
+        <div class="title">
+            <span>Thực Đơn</span>
+            <p>19035514534038(teckcombank)</p>
+        </div>
         <ul class="list-task">
             <% listTask.map((task, index)=>{ %>
                 <li>
                     <span class="item">
                         <%= task.message %>
                     </span>
+
                     <form action="/delete/<%= task._id %>" method="POST" class="delete-form">
                         <input type="hidden" name="id" value=<%=task._id %>>
                         <button type="submit" class="btn-delete">
                             <i class='bx bx-trash'></i>
                         </button>
                     </form>
-
                 </li>
                 <% }); %>
         </ul>
@@ -41,17 +44,6 @@
     </div>
 
 
-    <script>
-        // kiểm tra nếu trang được truy cập từ một thiết bị di động
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            // tìm đối tượng input đầu tiên trên trang
-            var input = document.querySelector('input');
-            // focus vào input và hiển thị bàn phím ảo trên thiết bị di động
-            input.focus();
-            input.click();
-        }
-
-    </script>
 </body>
 
 </html>

@@ -19,14 +19,26 @@ body {
 #wrapper .title {
     color: #fff;
     width: 100%;
-    background-color: #08a94b;
-    height: 65px;
+    background-color: #3498db;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
     width: 100%;
     top: 0;
+    flex-direction: column;
+}
+
+.title span {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.title p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 5px;
 }
 
 #wrapper .list-task {
@@ -56,7 +68,7 @@ body {
 .btn-delete {
     height: 100%;
     display: flex;
-    background-color: #08a94b;
+    background-color: #3498db;
     color: #fff;
     border: none;
     outline: none;
@@ -96,81 +108,7 @@ body {
     height: 100%;
     border: none;
     outline: none;
-    background-color: #08a94b;
+    background-color: #3498db;
     color: #fff;
+    font-size: 16px;
 }
-
-
-
-
-
-
-
-
-
-
-/* 
-@media only screen and (max-width: 600px) {
-    #wrapper {
-        height: 100vh;
-    }
-
-    #wrapper .title {
-        color: #333;
-        width: 100%;
-        border-bottom: 1px solid #f1ecec;
-        background-color: #f1ecec;
-        height: 65px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        width: 100%;
-    }
-
-    #wrapper .list-task {
-        height: calc(100% - 50px);
-        padding: 15px 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding-top: 80px;
-        max-height: 736px;
-        overflow: auto;
-    }
-
-    .list-task li {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 40px;
-        background-color: rgb(195, 200, 205);
-        border-radius: 5px;
-        padding: 0px 10px;
-    }
-
-    #wrapper .form-add {
-        border-top: 1px solid #dcd5d5;
-        height: 50px;
-        display: flex;
-        background-color: #fff;
-    }
-
-    .form-add input {
-        width: 80%;
-        height: 100%;
-        padding: 20px;
-        border: none;
-        outline: none;
-        background-color: transparent;
-    }
-
-    .form-add button {
-        width: 20%;
-        height: 100%;
-        border: none;
-        outline: none;
-        background-color: rgb(57, 57, 230);
-        color: #fff;
-    }
-} */
