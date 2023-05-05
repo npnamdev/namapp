@@ -16,7 +16,7 @@
 
 <body>
     <div id="wrapper">
-        <h2 class="title">Kèo Tối Thứ 7</h2>
+        <h2 class="title">Thực Đơn kèo Tối thứ 7</h2>
         <ul class="list-task">
             <% listTask.map((task, index)=>{ %>
                 <li>
@@ -35,7 +35,7 @@
         </ul>
 
         <form class="form-add" action="/create" method="POST" class="col-4 ">
-            <input type="text" name="message" placeholder="Enter new task" required>
+            <input type="text" name="message" placeholder="Enter new task" required autofocus>
             <button type="submit" class="btn btn-success w-100">Add</button>
         </form>
     </div>

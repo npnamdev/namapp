@@ -17,26 +17,29 @@ body {
 }
 
 #wrapper .title {
-    color: #333;
+    color: #fff;
     width: 100%;
-    border-bottom: 1px solid #f1ecec;
-    background-color: #f1ecec;
+    background-color: #08a94b;
     height: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
     width: 100%;
+    top: 0;
 }
 
 #wrapper .list-task {
-    height: calc(100% - 50px);
-    padding: 15px 20px;
+    min-height: 350px;
+    max-height: calc(100vh - 130px);
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     overflow: auto;
-    padding-top: 80px;
+    font-size: 16px;
+    margin-top: 65px;
+    margin-bottom: 100px;
 }
 
 .list-task li {
@@ -44,21 +47,22 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    background-color: rgb(228, 231, 235);
+    background-color: rgb(229, 233, 233);
     border-radius: 5px;
-    padding: 0px 10px;
+    padding: 0px 15px;
+    padding-right: 0px;
 }
 
 .btn-delete {
     height: 100%;
     display: flex;
-    background-color: rgb(58, 92, 228);
+    background-color: #08a94b;
     color: #fff;
     border: none;
     outline: none;
     height: 100%;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 0px 5px 5px 0px;
     font-size: 18px;
 }
 
@@ -67,6 +71,9 @@ body {
     height: 50px;
     display: flex;
     background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .form-add input {
@@ -76,6 +83,7 @@ body {
     border: none;
     outline: none;
     background-color: transparent;
+    font-size: 15px;
 }
 
 .form-add button {
@@ -83,10 +91,21 @@ body {
     height: 100%;
     border: none;
     outline: none;
-    background-color: rgb(57, 57, 230);
+    background-color: #08a94b;
     color: #fff;
 }
 
+
+
+
+
+
+
+
+
+
+
+/* 
 @media only screen and (max-width: 600px) {
     #wrapper {
         height: 100vh;
@@ -150,4 +169,4 @@ body {
         background-color: rgb(57, 57, 230);
         color: #fff;
     }
-}
+} */
