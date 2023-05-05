@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+#wrapper {
+    height: 100vh;
+}
+
+#wrapper .title {
+    color: #333;
+    width: 100%;
+    border-bottom: 1px solid #f1ecec;
+    background-color: #f1ecec;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+#wrapper .list-task {
+    height: calc(100% - 50px);
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+    padding-top: 80px;
+}
+
+.list-task li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: rgb(195, 200, 205);
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+#wrapper .form-add {
+    border-top: 1px solid #dcd5d5;
+    height: 50px;
+    display: flex;
+    background-color: #fff;
+}
+
+.form-add input {
+    width: 80%;
+    height: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.form-add button {
+    width: 20%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: rgb(57, 57, 230);
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    #wrapper {
+        height: 100vh;
+    }
+
+    #wrapper .title {
+        color: #333;
+        width: 100%;
+        border-bottom: 1px solid #f1ecec;
+        background-color: #f1ecec;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+    }
+
+    #wrapper .list-task {
+        height: calc(100% - 50px);
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 80px;
+        max-height: 736px;
+        overflow: auto;
+    }
+
+    .list-task li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        background-color: rgb(195, 200, 205);
+        border-radius: 5px;
+        padding: 0px 10px;
+    }
+
+    #wrapper .form-add {
+        border-top: 1px solid #dcd5d5;
+        height: 50px;
+        display: flex;
+        background-color: #fff;
+    }
+
+    .form-add input {
+        width: 80%;
+        height: 100%;
+        padding: 15px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+
+    .form-add button {
+        width: 20%;
+        height: 100%;
+        border: none;
+        outline: none;
+        background-color: rgb(57, 57, 230);
+        color: #fff;
+    }
+}
