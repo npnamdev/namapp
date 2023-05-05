@@ -20,7 +20,7 @@
         <ul class="list-task">
             <% listTask.map((task, index)=>{ %>
                 <li>
-                    <span>
+                    <span class="item">
                         <%= task.message %>
                     </span>
                     <form action="/delete/<%= task._id %>" method="POST" class="delete-form">
@@ -40,6 +40,18 @@
         </form>
     </div>
 
+
+    <script>
+        // kiểm tra nếu trang được truy cập từ một thiết bị di động
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // tìm đối tượng input đầu tiên trên trang
+            var input = document.querySelector('input');
+            // focus vào input và hiển thị bàn phím ảo trên thiết bị di động
+            input.focus();
+            input.click();
+        }
+
+    </script>
 </body>
 
 </html>
