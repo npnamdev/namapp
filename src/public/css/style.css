@@ -5,6 +5,13 @@
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+
 #wrapper {
     height: 100vh;
 }
@@ -37,9 +44,22 @@
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    background-color: rgb(195, 200, 205);
+    background-color: rgb(228, 231, 235);
     border-radius: 5px;
     padding: 0px 10px;
+}
+
+.btn-delete {
+    height: 100%;
+    display: flex;
+    background-color: rgb(58, 92, 228);
+    color: #fff;
+    border: none;
+    outline: none;
+    height: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
 }
 
 #wrapper .form-add {
@@ -116,7 +136,7 @@
     .form-add input {
         width: 80%;
         height: 100%;
-        padding: 15px;
+        padding: 20px;
         border: none;
         outline: none;
         background-color: transparent;
